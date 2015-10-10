@@ -198,3 +198,4 @@ FakesAssemblies/
 .vs/
 packages/
 wwwroot/
+project.lock.json

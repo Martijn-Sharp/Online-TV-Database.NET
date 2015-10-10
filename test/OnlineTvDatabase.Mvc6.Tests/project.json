@@ -2,6 +2,10 @@
   "webroot": "wwwroot",
   "userSecretsId": "aspnet5-OnlineTvDatabase.Mvc6.Tests-1c9195ad-435e-4f38-8c81-9eb24bff265f",
   "version": "1.0.0-*",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Martijn-Sharp/Online-TV-Database.NET"
+  },
 
   "dependencies": {
     "Microsoft.AspNet.Diagnostics": "1.0.0-beta7",
@@ -19,7 +23,7 @@
   },
 
   "commands": {
-    "web": "Microsoft.AspNet.Hosting --config hosting.ini",
+    "web": "Microsoft.AspNet.Hosting --config hosting.ini"
   },
 
   "frameworks": {

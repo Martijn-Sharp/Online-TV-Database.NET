@@ -1,11 +1,17 @@
 ﻿namespace OnlineTvDatabase.Core
 {
+    /// <summary>Language object to hold data of each compatible language</summary>
+    /// <remarks>
+    /// Based on the available languages described on:
+    /// http://thetvdb.com/wiki/index.php/Multi_Language
+    /// </remarks>
     public sealed class Language
     {
         public int? LanguageId { get; }
 
         public string Abbreviation { get; }
 
+        /// <summary>Parameterless constructor, use this to specify that you want to get all available language versions</summary>
         public Language()
         {
             Abbreviation = "all";
@@ -17,6 +23,7 @@
             Abbreviation = abbreviation;
         }
 
+        #region Languages
         public static readonly Language English = new Language(7, "en");
 
         public static readonly Language Swedish = new Language(8, "sv");
@@ -62,6 +69,8 @@
         public static readonly Language Croatian = new Language(31, "hr");
 
         public static readonly Language Korean = new Language(32, "ko");
+
+        #endregion
 
         public override string ToString()
         {

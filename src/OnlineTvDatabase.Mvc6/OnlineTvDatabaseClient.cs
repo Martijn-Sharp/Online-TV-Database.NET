@@ -1,4 +1,7 @@
 ﻿using System;
+using System.IO;
+using System.Net;
+using System.Xml.Serialization;
 using OnlineTvDatabase.Core.Abstractions;
 using OnlineTvDatabase.Core.Factory;
 using OnlineTvDatabase.Core.Http.Abstractions;
@@ -21,7 +24,13 @@ namespace OnlineTvDatabase.Mvc6
         public GetSeriesOutput GetSeries(GetSeriesInput requestData)
         {
             var response = HttpClient.Get(UrlFactory.Create(requestData).ToString());
-            return new GetSeriesOutput();
+            if (response.HttpStatusCode != HttpStatusCode.OK)
+            {
+                return null;
+            }
+
+            var output = DeserializeAs<GetSeriesOutput>(response.ResponseBody);
+            return output;
         }
 
         public void GetSeriesByRemoteId()
@@ -52,6 +61,13 @@ namespace OnlineTvDatabase.Mvc6
         public void UserRating()
         {
             throw new NotImplementedException();
+        }
+
+        protected T DeserializeAs<T>(string xml)
+        {
+            var xmlSerializer = new XmlSerializer(typeof(T));
+            TextReader reader = new StringReader(xml);
+            return (T) xmlSerializer.Deserialize(reader);
         }
     }
 }
