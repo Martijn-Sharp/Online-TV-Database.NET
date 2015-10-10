@@ -1,18 +1,27 @@
-﻿{
+{
   "version": "1.0.0-*",
   "description": "Online TV Database library for MVC6",
   "authors": [ "Martijn Heurter" ],
   "tags": [ "" ],
-  "projectUrl": "",
+  "projectUrl": "https://github.com/Martijn-Sharp/Online-TV-Database.NET",
   "licenseUrl": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Martijn-Sharp/Online-TV-Database.NET"
+  },
   "frameworks": {
     "dnx451": {
       "dependencies": {
         "OnlineTvDatabase.Core": "1.0.0-*"
+      },
+      "frameworkAssemblies": {
+        "System.Runtime.Serialization": "",
+        "System.Xml": ""
       }
     }
   },
   "dependencies": {
+    "Microsoft.AspNet.Mvc.Core": "6.0.0-beta7",
     "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7",
     "System.Net.Http": "4.0.1-beta-23225"
   }

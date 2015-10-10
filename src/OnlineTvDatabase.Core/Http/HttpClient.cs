@@ -6,8 +6,6 @@ namespace OnlineTvDatabase.Core.Http
 {
     public class HttpClient : IHttpClient
     {
-        private HttpWebRequest _httpWebRequest;
-        
         public HttpClient()
         {
             ContentType = "application/json";
@@ -17,17 +15,17 @@ namespace OnlineTvDatabase.Core.Http
         
         public HttpClientResponse Get(string url)
         {
-            _httpWebRequest = (HttpWebRequest) WebRequest.Create(url);
-            return MakeRequest("GET");
+            var webRequest = (HttpWebRequest) WebRequest.Create(url);
+            webRequest.Method = "GET";
+            return MakeRequest(webRequest);
         }
 
-        private HttpClientResponse MakeRequest(string method)
+        private HttpClientResponse MakeRequest(HttpWebRequest webRequest)
         {
-            _httpWebRequest.Method = method;
-            _httpWebRequest.ContentType = ContentType;
-            _httpWebRequest.ContentLength = 0;
+            webRequest.ContentType = ContentType;
+            webRequest.ContentLength = 0;
 
-            using (var response = _httpWebRequest.GetResponse())
+            using (var response = webRequest.GetResponse())
             {
                 using (var responseStream = response.GetResponseStream())
                 {
@@ -36,7 +34,7 @@ namespace OnlineTvDatabase.Core.Http
                         using (var responseStreamReader = new StreamReader(responseStream))
                         {
                             string responseFromServer = responseStreamReader.ReadToEnd();
-                            return new HttpClientResponse(((HttpWebResponse) response).StatusCode, responseFromServer);
+                            return new HttpClientResponse(((HttpWebResponse)response).StatusCode, responseFromServer);
                         }
                     }
                 }

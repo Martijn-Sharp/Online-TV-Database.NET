@@ -1,6 +1,6 @@
-﻿using System.Text;
-using OnlineTvDatabase.Core.Factory;
+﻿using OnlineTvDatabase.Core.Factory;
 using OnlineTvDatabase.Core.Models;
+using OnlineTvDatabase.Core.Utils;
 
 namespace OnlineTvDatabase.Core.Builders
 {
@@ -13,16 +13,16 @@ namespace OnlineTvDatabase.Core.Builders
 
         public string BuildQuery(GetSeriesInput input)
         {
-            var queryBuilder = new StringBuilder();
-            queryBuilder.Append($"seriesname={input.SeriesName}");
+            var queryBuilder = new QueryBuilder();
+            queryBuilder.Append("seriesname", input.SeriesName);
             if (input.Language != null)
             {
-                queryBuilder.Append($"&language={input.Language.Abbreviation}");
+                queryBuilder.Append("language", input.Language.Abbreviation);
             }
 
             if (!string.IsNullOrWhiteSpace(input.AccountId))
             {
-                queryBuilder.Append($"&user={input.AccountId}");
+                queryBuilder.Append("user", input.AccountId);
             }
 
             return queryBuilder.ToString();
