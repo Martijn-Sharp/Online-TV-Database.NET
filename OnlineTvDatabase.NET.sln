@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A3BDCAE8-892E-4CC2-A26B-A1AFF3DE4BAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineTvDatabase.Core", "src\OnlineTvDatabase.Core\OnlineTvDatabase.Core.csproj", "{1A808497-5950-4CE3-8AEE-0E841AE5BD22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineTvDatabase.Web", "src\OnlineTvDatabase.Web\OnlineTvDatabase.Web.csproj", "{F4DC6BE1-8EF7-48EE-A48B-988160C77B20}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnlineTvDatabase.Mvc6", "src\OnlineTvDatabase.Mvc6\OnlineTvDatabase.Mvc6.xproj", "{8A95A6D4-013C-4F00-860B-FA886A8BB305}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F25DDE89-6D2D-42D4-9A40-378FA3DEF4AE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "OnlineTvDatabase.Mvc6.Tests", "test\OnlineTvDatabase.Mvc6.Tests\OnlineTvDatabase.Mvc6.Tests.xproj", "{9A781E35-DED2-48C8-9DBE-357500791674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineTvDatabase.Core.Tests", "test\OnlineTvDatabase.Core.Tests\OnlineTvDatabase.Core.Tests.csproj", "{97994343-7262-4692-8C4F-5BF1EB1A97D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A808497-5950-4CE3-8AEE-0E841AE5BD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A808497-5950-4CE3-8AEE-0E841AE5BD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A808497-5950-4CE3-8AEE-0E841AE5BD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A808497-5950-4CE3-8AEE-0E841AE5BD22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4DC6BE1-8EF7-48EE-A48B-988160C77B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4DC6BE1-8EF7-48EE-A48B-988160C77B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4DC6BE1-8EF7-48EE-A48B-988160C77B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4DC6BE1-8EF7-48EE-A48B-988160C77B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A95A6D4-013C-4F00-860B-FA886A8BB305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A95A6D4-013C-4F00-860B-FA886A8BB305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A95A6D4-013C-4F00-860B-FA886A8BB305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A95A6D4-013C-4F00-860B-FA886A8BB305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A781E35-DED2-48C8-9DBE-357500791674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A781E35-DED2-48C8-9DBE-357500791674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A781E35-DED2-48C8-9DBE-357500791674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A781E35-DED2-48C8-9DBE-357500791674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97994343-7262-4692-8C4F-5BF1EB1A97D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97994343-7262-4692-8C4F-5BF1EB1A97D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97994343-7262-4692-8C4F-5BF1EB1A97D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97994343-7262-4692-8C4F-5BF1EB1A97D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A808497-5950-4CE3-8AEE-0E841AE5BD22} = {A3BDCAE8-892E-4CC2-A26B-A1AFF3DE4BAF}
+		{F4DC6BE1-8EF7-48EE-A48B-988160C77B20} = {A3BDCAE8-892E-4CC2-A26B-A1AFF3DE4BAF}
+		{8A95A6D4-013C-4F00-860B-FA886A8BB305} = {A3BDCAE8-892E-4CC2-A26B-A1AFF3DE4BAF}
+		{9A781E35-DED2-48C8-9DBE-357500791674} = {F25DDE89-6D2D-42D4-9A40-378FA3DEF4AE}
+		{97994343-7262-4692-8C4F-5BF1EB1A97D3} = {F25DDE89-6D2D-42D4-9A40-378FA3DEF4AE}
+	EndGlobalSection
+EndGlobal

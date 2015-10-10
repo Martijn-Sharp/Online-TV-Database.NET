@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Online TV Database library for MVC6",
+  "authors": [ "Martijn Heurter" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "dnx451": {
+      "dependencies": {
+        "OnlineTvDatabase.Core": "1.0.0-*"
+      }
+    }
+  },
+  "dependencies": {
+    "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta7",
+    "System.Net.Http": "4.0.1-beta-23225"
+  }
+}

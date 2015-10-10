@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net40": {
+      "wrappedProject": "../../src/OnlineTvDatabase.Core/OnlineTvDatabase.Core.csproj",
+      "bin": {
+        "assembly": "../../src/OnlineTvDatabase.Core/obj/{configuration}/OnlineTvDatabase.Core.dll",
+        "pdb": "../../src/OnlineTvDatabase.Core/obj/{configuration}/OnlineTvDatabase.Core.pdb"
+      }
+    }
+  }
+}
