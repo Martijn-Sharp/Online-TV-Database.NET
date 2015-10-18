@@ -5,4 +5,4 @@ An open-source C# libary for www.thetvdb.com API. Can be used by projects target
 ## Development requirements
 
 To compile the Core libary use an editor that can compile C# 6. ( https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx )
-To compile the MVC6 library and webproject use the ASP.NET 5 Beta7 runtimes. If you use Visual Studio 2015 install the ASP.NET 5 Beta7 tooling. ( https://www.microsoft.com/en-us/download/details.aspx?id=48738 )
+To compile the MVC6 library and webproject use the ASP.NET 5 Beta8 runtimes. If you use Visual Studio 2015 install the ASP.NET 5 Beta8 tooling. ( http://www.microsoft.com/en-us/download/details.aspx?id=49442 )
